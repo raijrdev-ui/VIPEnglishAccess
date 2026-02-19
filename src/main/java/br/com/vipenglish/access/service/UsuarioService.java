@@ -30,9 +30,11 @@ public class UsuarioService{
     }
     //Validação de login
 
-    public boolean validarLogin(String cpf, String senha){
-        return repository.findByCpf((cpf))
-                 .map(user -> user.getSenha().equals(senha))
-                 .orElse(false);
+    public boolean validarLogin(String cpf, String senha) {
+        Optional<Usuario> usuarioOpt = repository.findByCpf(cpf);
+        if (usuarioOpt.isPresent()) {
+            return usuarioOpt.get().getSenha().equals(senha);
+        }
+        return false;
     }
 }

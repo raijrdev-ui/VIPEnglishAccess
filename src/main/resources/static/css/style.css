@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h1 { color: hwb(202 15% 28%); margin-bottom: 0.5rem; }
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: hwb(202 15% 28%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover { background-color: #0d47a1; }

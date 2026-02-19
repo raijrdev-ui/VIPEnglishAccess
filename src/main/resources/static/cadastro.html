@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>VIP English - Primeiro Acesso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Primeiro Acesso</h1>
+        <form id="cadastroForm">
+            <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
+            <input type="text" id="cpfCadastro" placeholder="CPF" required>
+            
+            <select id="funcao">
+                <option value="Professor">Professor</option>
+                <option value="Adm">Administrador</option>
+                <option value="Cordenador">Coordenador</option>
+            </select>
+            
+            <input type="text" id="telefone" placeholder="Telefone">
+            <input type="password" id="senhaCadastro" placeholder="Criar Senha" required>
+            
+            <button type="submit">Finalizar Cadastro</button>
+        </form>
+        <a href="index.html">Voltar para Login</a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
